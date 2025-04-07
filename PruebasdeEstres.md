@@ -19,8 +19,7 @@ Las pruebas se hicieron antes y después de aplicar mejoras, para observar posib
 ## Pruebas Realizadas
 
 Siege (pruebas cortas y livianas):
-
-```bash
+```
 1. Prueba rápida básica:
 
 siege -c 5 -r 3 http://localhost:8080
@@ -30,6 +29,7 @@ Resultados:
 •	Tiempo total: 1.52 s
 •	Tiempo de respuesta promedio: 0.12 s
 •	Sin fallos, disponibilidad del 100%
+
 Conclusión: El servidor respondió correctamente a una carga muy baja. Ideal para pruebas de disponibilidad o funcionamiento básico.
 
 2. Prueba corta de concurrencia:
@@ -41,6 +41,7 @@ Resultados:
 •	Tiempo de respuesta promedio: 0.25 s
 •	Disponibilidad: 100%
 •	Throughput: 0.14 MB/s
+
 Conclusión: El sistema se mantuvo estable con carga continua. El tiempo de respuesta fue bajo, sin errores.
 
 
@@ -52,7 +53,7 @@ Se simularon 5 usuarios durante 30 segundos. Es una prueba liviana para verifica
 •	Tiempo de respuesta promedio: 0.05 s (excelente)
 •	Throughput: 0.33 MB/s
 
-El sistema respondió de forma muy eficiente. Ideal para endpoints livianos o pruebas rápidas de validación.
+Conclusión:El sistema respondió de forma muy eficiente. Ideal para endpoints livianos o pruebas rápidas de validación.
 
 
 4. Prueba sin delay:
@@ -63,15 +64,16 @@ Resultados:
 •	Transacciones: 3148
 •	Tiempo de respuesta promedio: 0.07 s
 •	Throughput: 0.25 MB/s
-Conclusión: Excelente rendimiento en un escenario de presión máxima. No hubo errores, lo cual muestra buena optimización del servidor.
 
+Conclusión: Excelente rendimiento en un escenario de presión máxima. No hubo errores, lo cual muestra buena optimización del servidor.
+```
 ![1](https://github.com/user-attachments/assets/ad583ff4-e4c8-4c87-a725-99375784ea1b)
 
 ```
-
+```
 Cuatro pruebas adicionales para siege que son ligeras y rápidas
 
-```bash
+```
 1. Prueba de páginas específicas:
 
 siege -c 3 -r 2 http://localhost:8080/wp-admin/
@@ -80,6 +82,7 @@ Resultados:
 •	Transacciones: 66
 •	Tiempo de respuesta: 0.08 s
 •	Throughput: 0.33 MB/s
+
 Conclusión: A pesar de ser una ruta más pesada (panel de admin), el servidor manejó bien la carga mínima.
 
 2. Simulación de usuario real:
@@ -90,6 +93,7 @@ Resultados:
 •	Transacciones: 6540
 •	Tiempo de respuesta: 0.04 s
 •	Throughput: 0.39 MB/s
+
 Conclusión: Excelente rendimiento en pruebas más realistas. Altísima cantidad de transacciones por segundo (110).
 
 
@@ -101,24 +105,28 @@ Resultados:
 •	Transacciones: 1680
 •	Tiempo de respuesta: 0.05 s
 •	Throughput: 0.13 MB/s
+
 Conclusión: Buen comportamiento ante una carga realista con pausas. Sin errores, alta disponibilidad.
 
-
+```
 ![2](https://github.com/user-attachments/assets/9ea1f9a1-bab8-4731-93a7-d9e8bdfc1374)
 ```
-
+```
 4. Prueba de URLs múltiples:
-```bash
+```
 siege -c 4 -r 3 http://localhost:8080/ http://localhost:8080/wp-admin/
 Prueba que accede a dos rutas distintas, 3 veces por cada uno de los 4 usuarios concurrentes.
 Resultados:
 •	Transacciones: 132
 •	Tiempo de respuesta: 0.04 s
 •	Throughput: 0.74 MB/s (muy alto para tan pocas transacciones)
+
 Conclusión: Muy útil para evaluar balanceo entre rutas distintas. Excelente tiempo de respuesta.
 
-
+```
 ![3](https://github.com/user-attachments/assets/72c65798-310c-4284-9ed5-b1b294d27a67)
+
+```
 ```
 ## Conclusión:
 
