@@ -1,0 +1,57 @@
+# Herramientas Open Source para Cómputo de Alto Desempeño (HPC)
+
+El cómputo de alto desempeño (HPC) se basa en el uso de múltiples procesadores para resolver problemas complejos a altas velocidades. El software de código abierto juega un papel crucial en este campo, ofreciendo flexibilidad, transparencia y una gran comunidad de desarrollo. A continuación, se presentan algunas herramientas open source importantes para HPC:
+
+## Sistemas Operativos
+
+* **Linux:** La mayoría de los clústeres de HPC utilizan distribuciones de Linux debido a su estabilidad, rendimiento, escalabilidad y gran soporte para hardware y software científico. Algunas distribuciones populares incluyen:
+    * **CentOS/Rocky Linux:** Distribuciones derivadas de Red Hat Enterprise Linux (RHEL), conocidas por su estabilidad y uso en entornos empresariales y científicos.
+    * **Ubuntu Server:** Una distribución popular y fácil de usar con una gran comunidad y amplias opciones de software.
+    * **Debian:** Una distribución comunitaria conocida por su compromiso con el software libre y su estabilidad.
+    * **SUSE Linux Enterprise Server (SLES):** Una distribución comercial con fuerte enfoque en la estabilidad y soporte empresarial, aunque también existe la versión openSUSE como alternativa comunitaria.
+
+## Entornos de Programación y Desarrollo
+
+* **Compiladores:**
+    * **GNU Compiler Collection (GCC):** Un conjunto de compiladores para varios lenguajes, incluyendo C, C++, Fortran, y más. Es ampliamente utilizado en HPC debido a su rendimiento y optimizaciones.
+    * **LLVM/Clang:** Otro potente compilador con un diseño modular y soporte para múltiples lenguajes. Es conocido por sus mensajes de error claros y su rápida compilación.
+* **Lenguajes de Programación:**
+    * **Fortran:** Un lenguaje tradicionalmente utilizado en computación científica y numérica, especialmente en física, ingeniería y meteorología.
+    * **C/C++:** Lenguajes de alto rendimiento que ofrecen un control preciso sobre el hardware, crucial para aplicaciones HPC.
+    * **Python:** Un lenguaje de alto nivel cada vez más popular en HPC para tareas como análisis de datos, visualización, machine learning y scripting. Librerías como NumPy, SciPy, and Matplotlib son fundamentales.
+* **Herramientas de Paralelización:**
+    * **Message Passing Interface (MPI):** Una biblioteca estándar para la programación paralela distribuida, permitiendo que múltiples procesos se comuniquen entre sí a través de una red. Implementaciones populares incluyen Open MPI y MPICH.
+    * **OpenMP:** Una interfaz de programación de aplicaciones (API) que soporta la programación paralela de memoria compartida. Utiliza directivas de compilador, rutinas de biblioteca y variables de entorno para especificar el paralelismo.
+    * **CUDA:** Una plataforma de computación paralela y un modelo de programación desarrollados por NVIDIA para su uso en GPUs. Permite acelerar significativamente ciertas cargas de trabajo.
+    * **OpenCL:** Un estándar abierto para la programación paralela heterogénea, permitiendo la ejecución de código en diversas plataformas, incluyendo CPUs, GPUs y otros aceleradores.
+
+## Gestión de Clústeres y Planificación de Tareas
+
+* **Slurm Workload Manager:** Un gestor de recursos de clúster altamente escalable y tolerante a fallos, ampliamente utilizado en grandes centros de HPC.
+* **PBS Professional:** Otro popular sistema de gestión de cargas de trabajo para entornos HPC.
+* **OpenLava:** Una alternativa de código abierto a LSF (Load Sharing Facility) para la gestión de clústeres.
+* **Warewulf:** Un sistema para la implementación y gestión de clústeres Linux a gran escala.
+
+## Librerías y Frameworks
+
+* **BLAS (Basic Linear Algebra Subprograms) y LAPACK (Linear Algebra PACKage):** Colecciones de rutinas básicas para operaciones de álgebra lineal de alto rendimiento. Implementaciones optimizadas incluyen OpenBLAS y Intel MKL (aunque esta última no es estrictamente open source, ofrece licencias gratuitas para algunos usos).
+* **PETSc (Portable, Extensible Toolkit for Scientific Computation):** Un conjunto de estructuras de datos y rutinas para la solución paralela de sistemas de ecuaciones en derivadas parciales.
+* **Trilinos:** Un proyecto que proporciona una colección de algoritmos y solvers escalables para problemas científicos y de ingeniería complejos.
+* **MPI.NET, mpi4py:** Interfaces de Python y .NET para la programación MPI.
+* **Dask:** Una librería de Python para la computación paralela flexible, que puede escalar desde portátiles hasta grandes clústeres.
+* **TensorFlow y PyTorch:** Frameworks de aprendizaje profundo ampliamente utilizados que también se benefician del HPC para acelerar el entrenamiento de modelos.
+
+## Herramientas de Monitoreo y Rendimiento
+
+* **Ganglia:** Un sistema de monitorización escalable y distribuido para clústeres de computadoras de alto rendimiento y grids.
+* **Nagios/Icinga:** Sistemas de monitorización que pueden alertar sobre problemas en el clúster.
+* **Perf:** Una herramienta de análisis de rendimiento para Linux.
+* **Valgrind:** Un conjunto de herramientas para la depuración y el análisis de rendimiento de programas.
+
+## Almacenamiento Paralelo
+
+* **Lustre:** Un sistema de archivos paralelo de alto rendimiento y escalabilidad, comúnmente utilizado en grandes clústeres.
+* **Ceph:** Una plataforma de almacenamiento distribuido que proporciona almacenamiento de objetos, bloques y archivos en un único sistema.
+* **GlusterFS:** Otro sistema de archivos distribuido de código abierto capaz de escalar a petabytes.
+
+Esta lista representa solo una parte del vasto ecosistema de herramientas open source disponibles para HPC. La elección de las herramientas adecuadas dependerá de las necesidades específicas del proyecto, la infraestructura disponible y la experiencia del equipo. La naturaleza abierta de estas herramientas fomenta la colaboración, la innovación y la adaptabilidad en el campo del cómputo de alto desempeño.
