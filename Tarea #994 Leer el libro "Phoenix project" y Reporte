@@ -1,0 +1,65 @@
+#  Reporte de lectura: *The Phoenix Project*
+
+> *Gene Kim, Kevin Behr y George Spafford*
+
+---
+
+##  Resumen general
+
+*The Phoenix Project* narra la historia de Bill Palmer, un gerente de TI que es promovido repentinamente a vicepresidente de operaciones en Parts Unlimited, una empresa al borde del colapso. Su tarea es rescatar un proyecto crítico llamado *Phoenix*, el cual ha consumido mucho dinero y sigue generando caos. A través de una serie de crisis y aprendizajes, Bill descubre las ineficiencias operativas y culturales de su empresa.
+
+Con la guía de un mentor llamado Erik, Bill y su equipo comienzan a aplicar principios de DevOps y gestión ágil para transformar la manera en que TI colabora con el negocio, logrando eventualmente resultados positivos tanto en rendimiento como en cultura organizacional.
+
+---
+
+##  Análisis de personajes principales
+
+- **Bill Palmer**: El protagonista. Representa a muchos profesionales de TI que enfrentan problemas sistémicos sin tener claridad sobre cómo solucionarlos. Su evolución es clave, pasando de bombero a líder transformador.
+  
+- **Brent**: Ingeniero estrella, pero cuello de botella. Ilustra el riesgo de depender de una sola persona sin documentar ni automatizar el conocimiento.
+
+- **Erik**: Mentor en la sombra. Introduce conceptos de manufactura Lean y DevOps. Su rol es provocar reflexión y cambio.
+
+- **Sarah, Steve y Patty**: Representan diversas áreas del negocio (marketing, finanzas y RRHH). Muestran cómo el trabajo en silos afecta negativamente la organización.
+
+---
+
+##  Los "Three Ways" (Tres Caminos del DevOps)
+
+1. **Flujo (The First Way)**  
+   Mejorar el flujo del trabajo desde Desarrollo hasta Operaciones.  
+   *Ejemplo en el libro*: Reducción del tiempo de entrega de cambios, visualización del trabajo en progreso.
+
+2. **Retroalimentación (The Second Way)**  
+   Crear ciclos de retroalimentación cortos para mejorar constantemente.  
+   *Ejemplo en el libro*: Automatización de pruebas y monitoreo en producción para detectar errores rápidamente.
+
+3. **Aprendizaje continuo (The Third Way)**  
+   Promover una cultura de experimentación, aprendizaje y mejora constante.  
+   *Ejemplo en el libro*: Permitir fallas pequeñas para evitar fallas catastróficas, fomentar la capacitación.
+
+---
+
+##  Reflexión personal
+
+Leer *The Phoenix Project* fue revelador. Aunque está narrado como una novela, refleja muchos problemas reales en áreas de TI, como la sobrecarga de trabajo, la falta de comunicación entre departamentos, la dependencia de ciertas personas clave y la ausencia de automatización.
+
+Me identifiqué con varias situaciones, como los "incendios diarios", la presión por cumplir fechas sin entender el sistema completo y la falta de alineación entre TI y el negocio. El libro no solo muestra los problemas, sino que ofrece una filosofía de trabajo basada en DevOps y Lean que puede aplicarse en cualquier entorno.
+
+---
+
+##  Lecciones aprendidas
+
+1. **No todo problema se resuelve con más trabajo, sino mejorando el sistema**.  
+   Trabajar más horas sin arreglar la raíz del problema solo genera más caos.
+
+2. **La automatización y la documentación reducen el riesgo y liberan capacidad**.  
+   Brent es un claro ejemplo del peligro de no compartir el conocimiento.
+
+3. **La comunicación entre áreas es fundamental**.  
+   Romper los silos permite que el negocio y TI trabajen con un mismo objetivo.
+
+4. **La mejora continua es más importante que soluciones rápidas**.  
+   Un enfoque ágil, iterativo y basado en datos ofrece resultados más sostenibles.
+
+
