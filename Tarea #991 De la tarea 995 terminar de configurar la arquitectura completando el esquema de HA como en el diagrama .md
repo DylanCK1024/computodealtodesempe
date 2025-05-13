@@ -32,7 +32,7 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 - Latencia máxima: **3848 ms**
 
 ### 📷 Prueba 2: ApacheBench sobre puerto 8080 (nodo slave)
-![Uploading ab  2 nodos hp proxy8080.jpg…]()
+
 
 - Tiempo total: **7.794 s**
 - Requests por segundo: **32.07 req/s**
@@ -41,6 +41,7 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 ```
 ```
 ### 📷 Prueba 3: Siege sobre ambos nodos
+![sage 2 nodos hp proxy](https://github.com/user-attachments/assets/e7cd1f08-7539-493c-b64d-cf8f2e200865)
 
 **Nodo master (puerto 80):**
 - Transacciones: **970**
