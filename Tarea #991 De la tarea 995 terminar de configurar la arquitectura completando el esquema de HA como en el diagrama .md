@@ -6,7 +6,7 @@ El propósito de este reporte es documentar y justificar las pruebas realizadas 
 
 ---
 
-## 🛠️ Arquitectura Final
+##  Arquitectura Final
 
 La arquitectura final está compuesta por:
 
@@ -18,9 +18,20 @@ Esta configuración asegura balanceo de carga, redundancia y alta disponibilidad
 
 ---
 
-## 🔍 Pruebas Realizadas
+## Pruebas Realizadas
 
 Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitectura:
+
+```
+```
+
+![ab  2 nodos hp proxy8080](https://github.com/user-attachments/assets/592a5e29-fddc-4212-8d8f-cffc9206fdaf)
+
+![ab  2 nodos hp proxy (2)](https://github.com/user-attachments/assets/3985d4dc-a475-44be-bf7c-7339f13287fb)
+
+
+
+
 
 ```
 
@@ -39,9 +50,12 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 - Tiempo medio por request: **249.424 ms**
 - Latencia máxima: **769 ms**
 ```
+
+![sage 2 nodos hp proxy](https://github.com/user-attachments/assets/6169cef1-822b-4444-a5e5-53a178538ab1)
+
+
 ```
 ### 📷 Prueba 3: Siege sobre ambos nodos
-![sage 2 nodos hp proxy](https://github.com/user-attachments/assets/e7cd1f08-7539-493c-b64d-cf8f2e200865)
 
 **Nodo master (puerto 80):**
 - Transacciones: **970**
@@ -55,7 +69,7 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 ```
 ---
 
-## ✅ Justificación
+## Justificación
 
 La ejecución de estas pruebas valida que la arquitectura cumple con los principios de alta disponibilidad y balanceo de carga. Al comparar los resultados entre los nodos master y slave:
 
@@ -65,7 +79,7 @@ La ejecución de estas pruebas valida que la arquitectura cumple con los princip
 
 ---
 
-## 🧾 Conclusión
+## Conclusión
 
 La implementación final cumple con el diagrama de arquitectura propuesto, garantizando alta disponibilidad mediante la réplica de nodos y balanceo de carga efectivo. Las pruebas demuestran que la arquitectura es capaz de manejar cargas concurrentes distribuidas con buena estabilidad y rendimiento.
 
