@@ -22,6 +22,8 @@ Esta configuración asegura balanceo de carga, redundancia y alta disponibilidad
 
 Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitectura:
 
+```
+
 ### 📷 Prueba 1: ApacheBench sobre puerto 80 (nodo master)
 
 - Tiempo total: **18.538 s**
@@ -30,12 +32,14 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 - Latencia máxima: **3848 ms**
 
 ### 📷 Prueba 2: ApacheBench sobre puerto 8080 (nodo slave)
+![Uploading ab  2 nodos hp proxy8080.jpg…]()
 
 - Tiempo total: **7.794 s**
 - Requests por segundo: **32.07 req/s**
 - Tiempo medio por request: **249.424 ms**
 - Latencia máxima: **769 ms**
-
+```
+```
 ### 📷 Prueba 3: Siege sobre ambos nodos
 
 **Nodo master (puerto 80):**
@@ -47,7 +51,7 @@ Se realizaron 3 pruebas para evaluar el rendimiento y estabilidad de la arquitec
 - Transacciones: **1015**
 - Tiempo de respuesta: **0.54 s**
 - Tasa de transacción: **32.68 trans/s**
-
+```
 ---
 
 ## ✅ Justificación
